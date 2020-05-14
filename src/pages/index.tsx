@@ -38,7 +38,10 @@ const Home: FunctionComponent<HomeProps> = ({ allPostsData }) => {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <h2 className={utilStyles.headingLg}>The author</h2>
+        <h2 className={utilStyles.headingLg}>Author's note</h2>
+        <p>
+          Hi,
+        </p>
         <p>
           My name is Raphaël TISON (@Airthee), I'm 23 years old and I live in France.<br/>
           Since very young, I'm passionate about computers, more specifically software development.
