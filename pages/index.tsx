@@ -4,7 +4,7 @@ import Layout, { siteTitle } from '../components/layout'
 import Date from '../components/date'
 import { getSortedPostsData } from '../lib/posts'
 import utilStyles from '../styles/utils.module.css'
-import { GetStaticProps, GetStaticPaths, GetServerSideProps } from 'next'
+import { GetStaticProps } from 'next'
 import React, { FunctionComponent } from 'react'
 
 type PostPreviewProps = {
@@ -38,14 +38,15 @@ const Home: FunctionComponent<HomeProps> = ({ allPostsData }) => {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
+        <h2 className={utilStyles.headingLg}>The author</h2>
         <p>
-          My name is <b>Raphaël TISON (@Airthee)</b>, I'm <b>23 years old</b> and I live in Vendée, France.<br/>
-          Since very young, I'm <b>passionate about computers</b>, more specifically <b>software development</b>.
+          My name is Raphaël TISON (@Airthee), I'm 23 years old and I live in France.<br/>
+          Since very young, I'm passionate about computers, more specifically software development.
         </p>
         <p>
-          Apart from computers, I also have other passions, such as <b>motorcycle rides</b> with my friends.
-          I also like to relax in front of <b>series</b>, among my favorites we can find <i>Breaking Bad</i>,
-          <i>Mr Robot</i> or <i>La Casa de Papel</i>. Finally, I also practice <b>Thai boxing (Muay Thai)</b> since a fiew years.
+          Apart from computers, I have other passions, such as motorcycle rides with my friends.
+          I also like to relax in front of series, among my favorites we can find <i>Breaking Bad</i>,
+          <i> Mr Robot</i> or <i>La Casa de Papel</i>. Finally, I practice Thai boxing (Muay Thai) since a fiew years.
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
