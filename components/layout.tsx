@@ -6,7 +6,7 @@ import { JsxChild } from 'typescript'
 import React, { FunctionComponent } from 'react'
 
 const name = 'Airthee'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'Airthee\'s Blog'
 
 type LayoutProps = {
   home?: boolean
