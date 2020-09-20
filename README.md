@@ -14,6 +14,14 @@ yarn install
 
 ## Usage
 
+For development :
+
+```sh
+yarn dev
+```
+
+For production :
+
 ```sh
 yarn build && yarn serve
 ```
