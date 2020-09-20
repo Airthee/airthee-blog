@@ -50,3 +50,11 @@
 .lightText {
   color: #999;
 }
+
+.alignRight {
+  text-align: right;
+}
+
+.alignCenter {
+  text-align: center;
+}

@@ -9,8 +9,8 @@ export default function Footer () {
 
     return (
         <footer className={footerStyles.footer}>
-            {links.map(link => (
-                <span className={footerStyles.link}>
+            {links.map((link, linkIndex) => (
+                <span key={linkIndex} className={footerStyles.link}>
                     <a target="__blank" href={link.url}>
                         {link.text}
                     </a>

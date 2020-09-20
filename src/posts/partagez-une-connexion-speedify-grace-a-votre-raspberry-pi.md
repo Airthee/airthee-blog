@@ -1,6 +1,7 @@
 ---
 title: '[FR] Partagez une connexion Speedify grâce à votre Raspberry Pi'
 date: '2020-09-20'
+lang: 'fr_FR'
 ---
 
 # Mise en place de Speedify sur un Raspberry Pi

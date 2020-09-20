@@ -7,27 +7,15 @@ import html from 'remark-html'
 const postsDirectory = path.join(process.cwd(), 'src', 'posts')
 
 export type PostType = {
-  title: string,
-  contentHtml: string,
+  id: string
+  title: string
+  contentHtml: string
   date: string
+  lang: string
 }
 
 export function getAllPostIds() {
   const fileNames = fs.readdirSync(postsDirectory)
-
-  // Returns an array that looks like this:
-  // [
-  //   {
-  //     params: {
-  //       id: 'ssg-ssr'
-  //     }
-  //   },
-  //   {
-  //     params: {
-  //       id: 'pre-rendering'
-  //     }
-  //   }
-  // ]
   return fileNames.map((fileName: String) => fileName.replace(/\.md$/, ''))
 }
 
