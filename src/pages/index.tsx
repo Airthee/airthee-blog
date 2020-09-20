@@ -43,7 +43,7 @@ const Home: FunctionComponent<HomeProps> = ({ allPostsData }) => {
           Hi,
         </p>
         <p>
-          My name is Raphaël TISON (@Airthee), I'm 23 years old and I live in France.<br/>
+          My name is Raphaël TISON (@Airthee), I'm 24 years old and I live in France.<br/>
           Since very young, I'm passionate about computers, more specifically software development.
         </p>
         <p>
