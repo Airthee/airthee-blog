@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import { JsxChild } from 'typescript'
 import React, { FunctionComponent } from 'react'
+import Footer from './footer'
 
 const name = 'Airthee'
 export const siteTitle = 'Airthee\'s Blog'
@@ -14,13 +15,9 @@ type LayoutProps = {
 
 const Layout: FunctionComponent<LayoutProps> = ({ children, home = false }) => {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
@@ -59,15 +56,18 @@ const Layout: FunctionComponent<LayoutProps> = ({ children, home = false }) => {
           </>
         )}
       </header>
-      <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
-    </div>
+      <div className={styles.container}>
+        <main>{children}</main>
+        {!home && (
+          <div className={styles.backToHome}>
+            <Link href="/">
+              <a>← Back to home</a>
+            </Link>
+          </div>
+        )}
+      </div>
+      <Footer />
+    </>
   )
 }
 

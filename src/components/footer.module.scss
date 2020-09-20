@@ -1,0 +1,19 @@
+.footer {
+    background-color: black;
+    color: #a9a9a9;
+    text-align: center;
+}
+
+.link {
+    a {
+        color: inherit;
+        &:hover {
+            color: #f0f0f0;
+            text-decoration: none;
+        }
+    }
+
+    &:not(:last-child)::after {
+        content: ' | ';
+    }
+}
