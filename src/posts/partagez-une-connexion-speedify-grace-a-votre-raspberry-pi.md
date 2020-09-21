@@ -14,7 +14,7 @@ d'utiliser le réseau Speedify avec tous ces avantages, peu importe le nombre d'
 ## Prérequis
 
 * Avoir au moins deux interfaces réseau : l'interface permettant aux autres appareils de se connecter ne peut être utlisée par le Raspberry pour accéder à internet. Si votre Raspberry est assez récent, il dispose déjà d'une antenne Wifi intégrée, et de ports ethernet, mais si vous souhaitez aggréger plusieurs réseaux wifi, vous devrez investir dans une (ou plusieurs) clé(s) Wifi USB.
-* Avoir un compte [Speedify](speedify.com/).
+* Avoir un compte [Speedify](https://speedify.com/).
 
 ## Procédure
 
