@@ -1,18 +1,25 @@
 .footer {
-    background-color: black;
-    color: #a9a9a9;
+  background-color: black;
+  color: #a9a9a9;
+
+  & > * {
     min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+  }
 }
 
 .link {
-    a {
-        color: inherit;
-        &:hover {
-            color: #f0f0f0;
-            text-decoration: none;
-        }
+  a {
+    color: inherit;
+    &:hover {
+      color: #f0f0f0;
+      text-decoration: none;
     }
+  }
+}
+
+.cryptoAddress:hover {
+  text-decoration: underline;
 }
